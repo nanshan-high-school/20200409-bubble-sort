@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string num;
+    cin >> num;
+    
+    bool check;
+
+    int number,big;
+
+    for(int j = 0; j < num.length() - 1; j++){
+        check = true;
+        for(int i = 0; i < num.length() - 1; i++){
+            if(num[i] > num[i + 1]){
+            big = num[i];
+            num[i] = num[i + 1];
+            num[i + 1] = big;
+            check = false;
+            }
+        }
+        if(check == true){
+            break;
+        }
+    }
+
+    cout << num;
+}
