@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int num[6987];
+    float num[6987];
     int quintity;
     cout << "警告：數字不得大於6987個\n";
     cout << "輸入多少數字：";
@@ -12,7 +12,7 @@ int main() {
         cin >> num[i];
     }
     for (int i = 0; i < quintity - 1; i++) {
-        int num2;
+        float num2;
         for(int j = 0; j < quintity - 1; j++) {
             if(num[j + 1] < num[j]) {
                 num2 = 0;
@@ -27,3 +27,4 @@ int main() {
     }
     return 0;
 }
+
