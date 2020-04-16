@@ -18,7 +18,7 @@ int main() {
   }
   
   for (int j = count; j > 0; j--) {
-    for (int i = 0; i < j; i++) {
+    for (int i = 0; i < j - 1; i++) {
       if (nums[i] > nums[i + 1]) {
         int save = nums[i];
         nums[i] = nums[i + 1];
