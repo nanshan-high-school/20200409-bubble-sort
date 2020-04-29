@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int main() {
@@ -7,7 +7,7 @@ int main() {
 	int number;
 	int money;
 
-	cout << "½Ð°Ý¦³´X­Ó¤ÀÃþ:";
+	cout << "è«‹å•æœ‰å¹¾å€‹åˆ†é¡ž:";
 	cin >> sort;
 
 	int sortmoney[sort];
@@ -19,22 +19,22 @@ int main() {
 	string product[sort][moneydata];
 	
 	for (int i = 0; i < sort; i++) {
-		cout << "²Ä" << i + 1 << "­Ó¤ÀÃþ¬O:";
+		cout << "ç¬¬" << i + 1 << "å€‹åˆ†é¡žæ˜¯:";
 		
 		cin >> sortname[i];
 	}
 
-	cout << "¦³´Xµ§±b:";
+	cout << "æœ‰å¹¾ç­†å¸³:";
 	cin >> moneydata;
 
 	for (int i = 0; i < moneydata; i++) {
-		cout << "²Ä´XÃþ:";
+		cout << "ç¬¬å¹¾é¡ž:";
 		cin >> number;
 
-		cout << "°Ó«~¦WºÙ:";
+		cout << "å•†å“åç¨±:";
 		cin >> product[number - 1][i];
 
-		cout << "ª÷ÃB:";
+		cout << "é‡‘é¡:";
 		cin >> money;
 		sortmoney[number - 1] += money;
 
@@ -44,7 +44,7 @@ int main() {
 	cout << "\n";
 
 	for (int i = 0; i < sort; i++) {
-		cout << sortname[i] << "¦³";
+		cout << sortname[i] << "æœ‰";
 		
 		for (int j = 0; j < moneydata; j++) {
 			cout << product[i][j];
