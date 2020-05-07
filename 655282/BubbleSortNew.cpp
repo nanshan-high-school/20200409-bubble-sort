@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int swap(int *m, int *n);
+void swap(int *m, int *n);
 
 int main() {
   int count;
@@ -25,10 +25,8 @@ int main() {
   }
 }
 
-int swap(int *m, int *n) {
+void swap(int *m, int *n) {
   int temp = *m;
   *m = *n;
   *n = temp;
-
-  return 0;
 }
